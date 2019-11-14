@@ -132,7 +132,7 @@ function playEnv() {
 function mouseReleased() {
   osc.stop();
 }
-/*
+
 function keyTyped(){
   if(key == 'a') {
     osc.amp(0.1);
@@ -154,6 +154,23 @@ function keyTyped(){
     osc.freq(880.00);
     osc.start();
   }
-  else if(key == '')
+  else if(key == 'd') {
+    osc.amp(0.5);
+    osc.freq(587.33);
+    osc.start();
+  }
+  else if(key == 'f') {
+    osc.amp(.5);
+    osc.freq(523.25);
+    osc.start();
+  }
+  else if(key == 'g') {
+    osc.amp(.2);
+    osc.freq(659.25);
+    osc.start();
+  }
 }
-*/
+
+function keyReleased() {
+  osc.stop();
+}
